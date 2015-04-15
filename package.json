@@ -1,6 +1,6 @@
 {
   "name": "exenv",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React's ExecutionEnvironment module extracted for use in other packages & components",
   "main": "index.js",
   "scripts": {
