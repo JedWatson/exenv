@@ -18,9 +18,13 @@ ExecutionEnvironment.canUseEventListeners  // are Events available? i.e addEvent
 ExecutionEnvironment.canUseViewport        // is there a viewport? i.e window.screen
 ```
 
+### Differences from React's ExecutionEnvironment
+
+The `ExecutionEnvironment` lib in React 0.13 includes an `isInWorker` property, which is `!canUseDOM`. This is highly specific to React internals and probably (a) hacky and (b) not useful to other packages, so it has been left out. Please open an issue with your thoughts if you disagree or have a better idea.
+
 ## Why?
 
-Because a lot of packages and components use React's private ExecutionEnvironment lib to detect available features, e.g
+A number of packages and components use React's private ExecutionEnvironment lib to detect available features, particularly to detect server-side rendering, e.g
 
 ```
 canUseDOM = require('react/lib/ExecutionEnvironment').canUseDOM; // BAD
