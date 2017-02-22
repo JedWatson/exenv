@@ -20,7 +20,7 @@
     "executionenvironment"
   ],
   "author": "Jed Watson",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/JedWatson/exenv/issues"
   },
